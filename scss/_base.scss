@@ -9,7 +9,9 @@ body {
   line-height: 1.8;
 
   main {
-    @include column;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px;
 
     header {
       text-align: center;
@@ -35,7 +37,11 @@ body {
     // 自己紹介・趣味スキル・連絡先の共通スタイル
     section,
     footer {
-      @include block;
+      background: $color-ffffff;
+      border: 1px solid $color-e5e1d8;
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 24px;
 
       h2 {
         @include heading(20px);
