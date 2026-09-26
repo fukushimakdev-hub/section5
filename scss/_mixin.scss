@@ -1,24 +1,6 @@
-@use "variables" as *;
-
-// 中央寄せの1カラム
-@mixin column {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 64px 24px;
-}
-
-// 白背景の角丸ブロック
-@mixin block {
-  background: $color-ffffff;
-  border: 1px solid $color-e5e1d8;
-  border-radius: 16px;
-  padding: 32px;
-  margin-top: 24px;
-}
-
-// 見出しのリセット（太さは通常のまま）
-@mixin heading($size) {
+// 見出しのリセット（太さは通常のまま）。上余白は必要な場合のみ指定
+@mixin heading($size, $top: 0) {
   font: inherit;
   font-size: $size;
-  margin: 0 0 16px;
+  margin: $top 0 16px;
 }
