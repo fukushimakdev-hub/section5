@@ -24,8 +24,7 @@ body {
       }
 
       h1 {
-        @include heading(28px);
-        margin-top: 24px;
+        @include heading(28px, 24px);
       }
 
       p {

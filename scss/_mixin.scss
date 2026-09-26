@@ -1,6 +1,6 @@
-// 見出しのリセット（太さは通常のまま）
-@mixin heading($size) {
+// 見出しのリセット（太さは通常のまま）。上余白は必要な場合のみ指定
+@mixin heading($size, $top: 0) {
   font: inherit;
   font-size: $size;
-  margin: 0 0 16px;
+  margin: $top 0 16px;
 }
