@@ -32,23 +32,8 @@ body {
       }
     }
 
-    section {
-      @include block;
-
-      h2 {
-        @include heading(20px);
-      }
-
-      p {
-        margin: 0;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 20px;
-      }
-    }
-
+    // 自己紹介・趣味スキル・連絡先の共通スタイル
+    section,
     footer {
       @include block;
 
@@ -59,7 +44,16 @@ body {
       p {
         margin: 0;
       }
+    }
 
+    section {
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+    }
+
+    footer {
       a {
         color: $color-333333;
       }

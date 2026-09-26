@@ -29,25 +29,7 @@ body main header p {
   margin: 0;
   color: #777777;
 }
-body main section {
-  background: #FFFFFF;
-  border: 1px solid #E5E1D8;
-  border-radius: 16px;
-  padding: 32px;
-  margin-top: 24px;
-}
-body main section h2 {
-  font: inherit;
-  font-size: 20px;
-  margin: 0 0 16px;
-}
-body main section p {
-  margin: 0;
-}
-body main section ul {
-  margin: 0;
-  padding-left: 20px;
-}
+body main section,
 body main footer {
   background: #FFFFFF;
   border: 1px solid #E5E1D8;
@@ -55,13 +37,19 @@ body main footer {
   padding: 32px;
   margin-top: 24px;
 }
+body main section h2,
 body main footer h2 {
   font: inherit;
   font-size: 20px;
   margin: 0 0 16px;
 }
+body main section p,
 body main footer p {
   margin: 0;
+}
+body main section ul {
+  margin: 0;
+  padding-left: 20px;
 }
 body main footer a {
   color: #333333;
